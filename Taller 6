@@ -1,0 +1,14 @@
+section .data
+    ax db 2	;Inicia ax como 2
+    bx db 5	;Inicia bx como 5
+
+section .text
+    char db 0
+    global _start
+
+cmp ax,bx
+je ;Son iguales
+add ax, bx
+
+jne ;Son iguales
+sub bx, ax
